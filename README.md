@@ -1,16 +1,78 @@
-# React + Vite
+# 🎬 Media Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive media search application built with React.js that allows users to search for and explore different types of media, including photos, videos, and GIFs.
 
-Currently, two official plugins are available:
+The application provides a simple interface for searching media and allows users to save their favorite results to a personal collection.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🔍 Search for media using keywords
+- 🖼️ Search and display photos
+- 🎥 Search and display videos
+- 🎞️ Search and display GIFs
+- ❤️ Save media items to a personal collection
+- 🗑️ Remove individual items from the collection
+- 🧹 Clear the entire collection
+- 💾 Persist collection data using Local Storage
+- 🔔 Display toast notifications for user actions
+- 🧭 Client-side navigation using React Router
+- 📱 Responsive user interface
+- 🎨 Dark-themed UI built with Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- JavaScript (ES6+)
+- React Router DOM
+- Redux Toolkit
+- React Redux
+- Tailwind CSS
+- React Toastify
+
+### APIs
+
+The application uses external media APIs to retrieve:
+
+- Photos
+- Videos
+- GIFs
+
+## 📂 Project Structure
+
+```text
+media_search_application/
+│
+├── public/
+│
+├── src/
+│   ├── api/
+│   │   └── API service files
+│   │
+│   ├── components/
+│   │   ├── CollectionsCard.jsx
+│   │   ├── NavBar.jsx
+│   │   ├── ResultCard.jsx
+│   │   ├── ResultGrid.jsx
+│   │   ├── SearchBar.jsx
+│   │   └── Tabs.jsx
+│   │
+│   ├── pages/
+│   │   ├── HomePage.jsx
+│   │   └── CollectionPage.jsx
+│   │
+│   ├── redux/
+│   │   ├── features/
+│   │   │   └── collectionSlice.js
+│   │   └── store.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
