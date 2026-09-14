@@ -4,6 +4,8 @@ A responsive media search application built with React.js that allows users to s
 
 The application provides a simple interface for searching media and allows users to save their favorite results to a personal collection.
 
+# Live Link : https://media-search-application-alpha.vercel.app/
+
 ## 🚀 Features
 
 - 🔍 Search for media using keywords
